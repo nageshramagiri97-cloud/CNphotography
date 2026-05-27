@@ -35,18 +35,13 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <div className="flex items-center gap-2">
-            <div className={`w-6 h-6 border rotate-45 flex items-center justify-center ${scrolled ? 'border-brand' : 'border-white/50'}`}>
-              <span className={`-rotate-45 font-serif text-sm font-bold ${scrolled ? 'text-text-main' : 'text-white'}`}>
-                {BUSINESS_INFO.name === "[Your Business Name]" ? "E" : BUSINESS_INFO.name.charAt(0)}
-              </span>
-            </div>
-            <a
-              href="#home"
-              className={`font-serif text-lg tracking-widest uppercase ${
-                scrolled ? 'text-text-main' : 'text-white drop-shadow-md'
-              }`}
-            >
-              {BUSINESS_INFO.name === "[Your Business Name]" ? "Eternal Moments" : BUSINESS_INFO.name}
+            <a href="#home" className="flex items-center">
+              <img 
+                src="https://kwadcyynyjxpavbstptx.supabase.co/storage/v1/object/public/portfolio/LOGOS/wide%20logo2.png" 
+                alt={BUSINESS_INFO.name} 
+                className={`h-8 md:h-10 w-auto object-contain transition-all duration-300 ${scrolled ? 'opacity-100' : 'opacity-90 drop-shadow-md'}`} 
+                referrerPolicy="no-referrer" 
+              />
             </a>
           </div>
 

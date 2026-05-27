@@ -13,8 +13,8 @@ export default function Portfolio() {
     : PORTFOLIO.filter(item => item.category === filter);
 
   return (
-    <section id="portfolio" className="py-24 md:py-32 bg-bg-secondary border-b border-border-main">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="portfolio" className="min-h-screen py-24 md:py-32 bg-bg-secondary border-b border-border-main flex flex-col justify-center">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         
         <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
           <div>
@@ -43,24 +43,24 @@ export default function Portfolio() {
 
         <motion.div 
           layout
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6"
+          className="columns-1 sm:columns-2 lg:columns-3 gap-4 md:gap-6 space-y-4 md:space-y-6"
         >
           <AnimatePresence mode="popLayout">
-            {filteredPortfolio.map((item) => (
+            {filteredPortfolio.map((item, index) => (
               <motion.div
-                key={item.image}
+                key={item.image + index}
                 layout
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, scale: 0.9 }}
                 transition={{ duration: 0.4 }}
-                className="relative group overflow-hidden cursor-pointer aspect-[4/5] object-cover"
+                className="relative group overflow-hidden cursor-pointer w-full inline-block"
                 onClick={() => setSelectedImage(item.image)}
               >
                 <img 
                   src={item.image} 
                   alt={item.category} 
-                  className="w-full h-full object-cover transition-transform duration-700 ease-in-out group-hover:scale-105"
+                  className="w-full h-auto object-cover transition-transform duration-700 ease-in-out group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-bg-secondary/40 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                   <span className="text-text-main text-[10px] uppercase tracking-[0.2em] border border-text-main px-6 py-2">

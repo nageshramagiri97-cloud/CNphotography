@@ -4,8 +4,8 @@ import { Check } from 'lucide-react';
 
 export default function Packages() {
   return (
-    <section id="packages" className="py-24 md:py-32 bg-bg-primary border-b border-border-main">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="packages" className="min-h-screen py-24 md:py-32 bg-bg-primary border-b border-border-main flex flex-col justify-center">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         
         <div className="text-center mb-16 md:mb-24">
           <span className="text-brand text-[10px] uppercase tracking-[0.3em] font-semibold mb-4 block">Investment</span>

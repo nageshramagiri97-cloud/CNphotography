@@ -4,8 +4,8 @@ import { Quote } from 'lucide-react';
 
 export default function Testimonials() {
   return (
-    <section className="py-24 md:py-32 bg-bg-primary border-b border-border-main">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="min-h-screen py-24 md:py-32 bg-bg-primary border-b border-border-main flex flex-col justify-center">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         
         <div className="text-center mb-16 md:mb-24 flex flex-col items-center">
           <Quote size={32} className="text-brand/30 mb-6" />

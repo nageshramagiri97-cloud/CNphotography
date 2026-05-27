@@ -9,8 +9,13 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
           
           <div className="md:col-span-1">
-            <a href="#home" className="font-serif text-2xl tracking-wide block mb-6 italic">
-              {BUSINESS_INFO.name === "[Your Business Name]" ? "Eternal Moments" : BUSINESS_INFO.name}
+            <a href="#home" className="block mb-6">
+              <img 
+                src="https://kwadcyynyjxpavbstptx.supabase.co/storage/v1/object/public/portfolio/LOGOS/wide%20logo2.png" 
+                alt={BUSINESS_INFO.name} 
+                className="h-10 md:h-12 w-auto object-contain" 
+                referrerPolicy="no-referrer" 
+              />
             </a>
             <p className="text-text-muted font-light text-sm leading-relaxed mb-6">
               Capturing life's most beautiful moments with timeless elegance and cinematic storytelling.

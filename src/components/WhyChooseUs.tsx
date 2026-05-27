@@ -4,7 +4,7 @@ import { Star } from 'lucide-react';
 
 export default function WhyChooseUs() {
   return (
-    <section className="py-24 md:py-32 bg-bg-secondary text-text-main relative overflow-hidden border-b border-border-main">
+    <section className="min-h-screen py-24 md:py-32 bg-bg-secondary text-text-main relative overflow-hidden border-b border-border-main flex items-center">
       {/* Background Decorative Element */}
       <div className="absolute top-0 right-0 w-1/2 h-full opacity-5 pointer-events-none">
         <svg viewBox="0 0 100 100" preserveAspectRatio="none" className="w-full h-full text-brand fill-current">
@@ -12,7 +12,7 @@ export default function WhyChooseUs() {
         </svg>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
           
           <motion.div

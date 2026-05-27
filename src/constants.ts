@@ -40,12 +40,12 @@ export const SERVICES = [
   {
     title: "Birthday Photography",
     description: "Capturing the joy and celebration of your life's milestones.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/d/dd/Child_blowing_out_candles_on_a_vegan_tart_%287843233606%29.jpg",
+    image: "/chikku.jpeg",
   },
   {
     title: "Cinematic Birthday Videography",
     description: "Beautifully edited highlights to remember every smile and laugh.",
-    image: "https://upload.wikimedia.org/wikipedia/commons/0/0f/Kids_and_cake_3.jpg",
+    image: "/chikku1.jpeg",
   },
   {
     title: "Couple Portraits",
@@ -81,8 +81,28 @@ export const PORTFOLIO = [
     image: "https://upload.wikimedia.org/wikipedia/commons/9/94/Beautiful_Indian_Groom.jpg",
   },
   {
-    category: "South Indian",
-    image: "https://upload.wikimedia.org/wikipedia/commons/3/33/Dance_at_the_Indian_wedding.jpg",
+    category: "Birthday Milestones",
+    image: "/chikku.jpeg",
+  },
+  {
+    category: "Candid Moments",
+    image: "/chikku1.jpeg",
+  },
+  {
+    category: "Birthday Milestones",
+    image: "https://images.unsplash.com/photo-1530103862676-de8892b12a15?auto=format&fit=crop&q=80&w=800",
+  },
+  {
+    category: "Birthday Milestones",
+    image: "https://images.unsplash.com/photo-1558636508-e0db3814bd1d?auto=format&fit=crop&q=80&w=800",
+  },
+  {
+    category: "Candid Moments",
+    image: "https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&q=80&w=800",
+  },
+  {
+    category: "Candid Moments",
+    image: "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=800",
   },
 ];
 

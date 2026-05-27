@@ -3,8 +3,8 @@ import { SERVICES } from '../constants';
 
 export default function Services() {
   return (
-    <section id="services" className="py-24 md:py-32 bg-bg-primary text-text-main border-b border-border-main">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="services" className="min-h-screen py-24 md:py-32 bg-bg-primary text-text-main border-b border-border-main flex flex-col justify-center">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         
         <div className="text-center mb-16 md:mb-24">
           <motion.span 
